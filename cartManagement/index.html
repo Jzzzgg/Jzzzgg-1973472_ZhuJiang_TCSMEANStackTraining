@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Let's Shopping !</h1>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link " href="cart.html" onclick="submit()">Shopping Cart</a>
+                </li>
+                <li class="cartSize" id="cartSize">
+                    <p class="nav-link">Cart Size: 0</p>
+                  </li>
+              </ul>
+        </nav>
+    </header>
+
+    <!-- Header -->
+
+
+
+    <!-- below is grid layout for item -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name1">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price1">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add1()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name2">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price2">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add2()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name3">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price3">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add3()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+
+            </div>
+            <div class="expand"></div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name4">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price4">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add4()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name5">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price5">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add5()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name6">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price6">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add6()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+
+            </div>
+            <div class="expand"></div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name7">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price7">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add7()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col" >
+                            Name: 
+                        </div>
+                        <div class="col" id="name8">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price8">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add8()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col">
+                            Name: 
+                        </div>
+                        <div class="col" id="name9">
+                            nameExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Price: $
+                        </div>
+                        <div class="col" id="price9">
+                            priceExample
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" onclick="add9()" value="Add item">
+                    </div>
+                </div>
+                <div class="col"></div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Using the grid layout to create the component for item -->
+
+
+    <footer>
+        <div class="footer"> Copyright@Zhu Jiang</div>
+
+    </footer>
+
+    <script src="cart.js"></script>
+
+
+</body>
+</html>

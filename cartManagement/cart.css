@@ -1,0 +1,65 @@
+h1 {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-style: italic;
+  color: violet;
+}
+.nav {
+  font-style: italic;
+}
+.col-3 {
+  border: black 1px solid;
+}
+.row {
+  padding-bottom: 10px;
+}
+.expand {
+  margin-top: 80px;
+}
+.container {
+  margin-top: 100px;
+}
+input[type="button"] {
+  background-color: darksalmon;
+}
+input[type="button"]:active,
+a:active {
+  color: white;
+}
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}
+#myCart th {
+  background-color: darksalmon;
+}
+#myCart td {
+  background-color: pink;
+  color: black;
+}
+table {
+  margin: 40px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+th,
+td {
+  height: 60px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+#total {
+  text-align: center;
+  font-size: 30px;
+}
+.pay {
+  margin-top: 50px;
+  text-align: center;
+}
+.pay a {
+  text-decoration: none;
+}
