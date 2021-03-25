@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="floatLeft">Sign Up</h1>
+    <hr class="clearFix">
+    <div class="center">
+        <form id="form" [formGroup]="signUpInfo" (ngSubmit)="signUp()" >
+            <div class="row mb-3">
+                <label  class="col-sm-2 col-form-label">Username: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="user">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password: </label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" formControlName="pass">
+                </div>
+              </div>
+                <input type="submit" value="Sign Up" class="btn btn-outline-primary">
+                <input type="reset" value= "Reset" class="btn btn-outline-primary">
+        </form>
+            Already have the account? Try to <a routerLink="../login">Login</a>.<br> (P.S. You can only sign up one account and resign up the account 
+            due to time limit.)
+        
+            <div style="margin-top: 20px; color: red;">
+                {{message}}
+            </div>
+        
+    </div>
+    
+
+</div>

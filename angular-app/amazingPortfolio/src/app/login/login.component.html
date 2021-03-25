@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="floatLeft">Login</h1>
+    <div class="floatRight">
+        Don't have account yet? Try to <a routerLink="../sign-up">Sign Up</a>.
+    </div>
+    <hr class="clearFix">
+    <div class="center">
+        <form id="form" [formGroup]="loginInfo" (ngSubmit)="login()" >
+            <div class="row mb-3">
+                <label  class="col-sm-2 col-form-label">Username: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="user">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password: </label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" formControlName="pass">
+                </div>
+              </div>
+                <input type="submit" value="Login" class="btn btn-outline-primary">
+                <input type="reset" value= "Reset" class="btn btn-outline-primary">
+        </form>
+        <span style="color:red;">{{message}}</span>
+    </div>
+    
+
+</div>

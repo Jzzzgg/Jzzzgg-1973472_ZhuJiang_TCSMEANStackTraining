@@ -1,0 +1,54 @@
+<div class="container" *ngIf=status>
+    <h1 class="floatLeft">Portfolio</h1>
+    <input class="floatRight" type="button" (click)="logout()" value="Logout">
+    <hr class="clearFix">
+
+    
+    
+
+
+    <form [formGroup]="personalInfo" (ngSubmit)="add()" style="max-width: 60%; margin: 0 auto;">
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Phone" formControlName="phone" >
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Address" formControlName="address">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+            <div class="col">
+                <input type="submit" value="Add infos" class="btn btn-outline-primary" >
+            </div> 
+            <div class="col">
+                <input type="reset" value="Reset" class="btn btn-outline-primary">
+            </div>
+      </div>
+    </form>
+
+    <hr style="margin-top: 50px;">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Phone:</th>
+                <th>Address:</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let i of userInfo">
+                <td>{{i.phone}}</td>
+                <td>{{i.address}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+<div *ngIf=!status class="center">
+    404
+    <br>Unable to search this page
+</div>

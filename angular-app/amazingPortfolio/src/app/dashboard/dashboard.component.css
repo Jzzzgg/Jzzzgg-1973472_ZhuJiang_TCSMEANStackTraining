@@ -1,0 +1,43 @@
+h1 {
+  color: blueviolet;
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.clearFix {
+  clear: both;
+}
+.center {
+  text-align: center;
+  border: solid 1px black;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact {
+  font-size: 20px;
+  margin-top: 50px;
+}
+span {
+  padding: 15px;
+  margin-right: 10px;
+}
+table {
+  margin: 40px auto;
+}
+th,
+td {
+  width: 500px;
+  height: 40px;
+  padding: 20px;
+  border: 1px solid yellow;
+}
+th {
+  background-color: yellowgreen;
+}
+td {
+  background-color: lightblue;
+}
