@@ -1,0 +1,41 @@
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  border: 1px solid black;
+  margin: 0;
+}
+h2 {
+  color: white;
+  background-color: black;
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+}
+form {
+  padding: 100px;
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  font-size: 20px;
+}
+.col-4 {
+  padding: 0;
+}
+.col-8 {
+  padding: 0;
+  border-left: 1px solid black;
+}
+th,
+td {
+  padding: 20px;
+}
+.box {
+  border: 1px solid black;
+  margin: 60px;
+  border-radius: 30px;
+}
+tr {
+  border: 1px solid black;
+}

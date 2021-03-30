@@ -1,0 +1,43 @@
+h1 {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.message {
+  font-size: 40px;
+  margin-top: 50px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.container-fulid {
+  text-align: center;
+}
+table {
+  margin: 40px auto;
+}
+.show {
+  margin-top: 50px;
+}
+table,
+th,
+td {
+  border: 1px black solid;
+  text-align: left;
+}
+th,
+td {
+  padding: 15px;
+}
+table {
+  background-color: lightgreen;
+  color: darkgreen;
+  font-size: 18px;
+}
+.box {
+  padding: 100px;
+}

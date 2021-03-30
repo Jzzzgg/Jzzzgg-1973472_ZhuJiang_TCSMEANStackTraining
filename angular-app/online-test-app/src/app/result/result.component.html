@@ -1,0 +1,30 @@
+<div class="container-fulid">
+    <h1>{{username}}'s result: </h1>
+    <div class="message green" *ngIf=passFail>Congratulations, you've passed the quizzes !</div> 
+    <div class="message red" *ngIf=!passFail>Sorry, you didn't pass the quizzes !</div> 
+    <br>
+    <div style="font-size: 40px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">{{correctString}}</div> 
+    <input class="show btn btn-primary" *ngIf=!showStatus type="button" value="Show Answers" (click)="show()" >
+    
+
+    <div class="box" *ngIf=showStatus>
+    <table  class="show">
+        <thead>
+            <tr style="color: darkred; background-color: darksalmon;font-size: 25px; height:100px;">
+                <th>Question</th>
+                <th>Correct Answer</th>
+                <th>Your Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let i of result">
+                <td>{{i.question}}</td>
+                <td>{{i.correctAnswer}}</td>
+                <td>{{i.yourAnswer}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+</div>
+

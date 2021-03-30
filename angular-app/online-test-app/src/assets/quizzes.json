@@ -1,0 +1,74 @@
+[
+    {"question" : "Question No: 1 - In Angular, you can pass data from parent component to child component using...",
+        "answer1" : "A. @Output()",
+        "answer2": "B. @Input()",
+        "answer3" : "C. Input", 
+        "answer4": "D. Output", 
+        "correctAnswer": 2
+        },
+    {"question" : "Question No: 2 - Async Pipe subscribes to observer and update expression whenever there is data sent from observer",
+        "answer1" : "A. True",
+        "answer2": "B. False",
+        "answer3" : "", 
+        "answer4": "", 
+        "correctAnswer": 1
+    },
+    {"question" : "Question No: 3 - In Angular, you can pass data from child component to parent component using",
+        "answer1" : "A. @Output()",
+        "answer2": "B. @Input()",
+        "answer3" : "C. Input", 
+        "answer4": "D. Output", 
+        "correctAnswer": 1
+    },
+    {"question" : "Question No: 4 - You can create local HTML reference of HTML tag using variable which starts with character",
+        "answer1" : "A. @",
+        "answer2": "B. #",
+        "answer3" : "C. *", 
+        "answer4": "D. &", 
+        "correctAnswer": 2
+    },
+    {"question" : "Question No: 5 - A directive which modifies DOM hierarchy is called",
+        "answer1" : "A. Structural directive",
+        "answer2": "B. Attribute directive",
+        "answer3" : "", 
+        "answer4": "", 
+        "correctAnswer": 1
+    },
+    {"question" : "Question No: 6 - Select correct form control class name which is set to true via [(ngModel)] whenever value is modified",
+        "answer1" : "A. .ng-invalid",
+        "answer2": "B. .ng-pending",
+        "answer3" : "C. .ng-pristine", 
+        "answer4": "D. .ng-dirty", 
+        "correctAnswer": 4
+    },
+    {"question" : "Question No: 7 - If you provide a custom service in two components’ “providers” section of @Component decorator, how many instances of service shall get created?",
+        "answer1" : "A. 1",
+        "answer2": "B. 2",
+        "answer3" : "C. 3", 
+        "answer4": "D. 4 ", 
+        "correctAnswer": 2
+    },{"question" : "Question No: 8 - Custom pipe can modify actual value of variable apart from different presention in HTML.",
+        "answer1" : "A. True",
+        "answer2": "B. False",
+        "answer3" : "", 
+        "answer4": "", 
+        "correctAnswer": 2
+    },
+    {"question" : "Question No: 9 - In Angular routing, below tag is used to render matched component via active route.",
+        "answer1" : "A. <router></router>",
+        "answer2": "B. <router-output></router-output>",
+        "answer3" : "C. <router-outlet></router-outlet>", 
+        "answer4": "D. <router-display></router-display>", 
+        "correctAnswer": 3
+    },
+    {"question" : "Question No: 10 - We need to call below method of RouterModule for providing all routes in AppModule",
+        "answer1" : "A. RouterModule.forChild",
+        "answer2": "B. RouterModule.forRoot",
+        "answer3" : "C. RouterModule", 
+        "answer4": "D. RouterModule.import", 
+        "correctAnswer": 2
+    }
+    
+          
+
+]

@@ -1,0 +1,26 @@
+<div *ngIf=!start class="box">
+    <h1>Get ready to start the quizzes</h1>
+    <input #name type="text" placeholder="Name" (keyup)="setName(name.value)" > 
+    <br>
+    <input type="submit" value="Start" class="btn btn-outline-primary btn-lg" (click)="startQuizzes()">
+</div>
+<div *ngIf=start class="container"> 
+   <ul >    
+        <li style="color: darkred; background-color: darksalmon;font-size: 25px; height:150px;">{{quizzes[index].question}} </li>
+        <li><input #radio1 type="radio" name="choice" [value]="1" (click)="save(radio1.value)"> {{quizzes[index].answer1}} </li> 
+        <li><input #radio2 type="radio" name="choice" [value]="2" (click)="save(radio2.value)"> {{quizzes[index].answer2}} </li>
+        <li><input #radio3 type="radio" name="choice" [value]="3" (click)="save(radio3.value)"> {{quizzes[index].answer3}}</li> 
+        <li><input #radio4 type="radio" name="choice" [value]="4" (click)="save(radio4.value)"> {{quizzes[index].answer4}}</li>
+    </ul>
+    
+
+    <div class="buttons">
+            <input type="button" value="Previou" class="btn btn-outline-primary" (click)="pre()">
+        
+            <input *ngIf=status type="button" value="Next" class="btn btn-outline-primary" (click)="next()">
+            <input *ngIf=!status type="submit" value="Submit" class="btn btn-outline-primary" (click)="submit()">
+    
+        
+    </div>
+    ·
+</div>
