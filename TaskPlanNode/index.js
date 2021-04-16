@@ -158,7 +158,7 @@ function deleteFunc(taskID){
             }
             writeFunc(JSON.stringify(taskArray));
             // write the file again
-        }
+        }   
     })
     
 }
