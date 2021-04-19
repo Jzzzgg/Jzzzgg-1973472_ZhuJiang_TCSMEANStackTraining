@@ -41,7 +41,7 @@ let storeCourse = (req, res) => {
         }else{
             res.send(err.message)
         }
-    }
+    }   
     )
 }
 
